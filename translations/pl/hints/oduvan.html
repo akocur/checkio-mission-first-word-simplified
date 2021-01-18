@@ -1,0 +1,67 @@
+<body data-author="oduvan">
+<div class="question-answer">
+    <div class="question">
+        Nie mam pojęcia od czego zacząć.
+    </div>
+    <div class="answer">
+        Twoja strategia powinna opierać się na podzieleniu stringa na słowa, a następnie wybranie pierwszego z nich.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        OK. Masz może jakiś link do dokumentacji?
+    </div>
+    <div class="answer">
+        Pewnie. Jeśli chcesz podzielić string powinieneś użyć <b>str.split</b>. <a href="https://docs.python.org/3.8/library/stdtypes.html#str.split">W dokumentacji znajdziesz więcej informacji</a>.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        OK. Skąd w takim razie wziąć słowa?
+    </div>
+    <div class="answer">
+        Cóż, właściwie wystarczy wywołać tę funkcję. Spójrz:
+
+        <pre class="brush: python">
+text = "greeting from CheckiO Planet"
+words = text.split()
+print(words)
+        </pre>
+
+       Wyjście dla tego fragmentu kodu będzie wyglądało następująco: 
+
+        <pre class="brush: python">
+['greeting', 'from', 'CheckiO', 'Planet']
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Dobrze... To jak teraz mogę wybrać pierwsze słowo?
+    </div>
+    <div class="answer">
+        Wynikiem funkcji <b>split</b> jest lista słów. Aby dostać się do pierwszego z nich, będziesz musiał użyć indeksu 0.
+        <pre class="brush: python">
+print(words[0])
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Nadal nie wiem jak to wszystko połączyć.
+    </div>
+    <div class="answer">
+        Okej. Ostateczne rozwiązanie powinno wyglądać tak:
+        <pre class="brush: python">
+def first_word(text: str) -> str:
+    """
+        returns the first word in a given text.
+    """
+    return text.split()[0]
+        </pre>
+
+    </div>
+</div>
+
+
+</body>
