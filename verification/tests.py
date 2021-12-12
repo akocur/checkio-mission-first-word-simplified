@@ -26,7 +26,11 @@ TESTS = {
             "input": "hi",
             "answer": "hi",
             "explanation": "text consists of only one word"
-        }
+        },
+        {
+            "input": "",
+            "answer": "",
+        },
     ],
     "Extra": [
         {
